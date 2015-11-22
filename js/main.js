@@ -1,10 +1,10 @@
-require(['Fattyfier', 'Pinkyfier'], function (Fattyfier, Pinkyfier) {
-	var pinkyfier = new Pinkyfier('text'),
-			fattyfier = new Fattyfier('text');
+var Fattyfier = require('./Fattyfier'),
+		Pinkyfier = require('./Pinkyfier'),
+		pinkyfier = new Pinkyfier('text'),
+		fattyfier = new Fattyfier('text');
 
-	pinkyfier.pink();
+pinkyfier.pink();
 
-	document.getElementById('fat').onclick = function () {
-		fattyfier.fat();
-	};
-});
+document.getElementById('fat').onclick = function () {
+	fattyfier.fat();
+};
