@@ -1,8 +1,10 @@
-var pinkyfier = new Pinkyfier('text'),
-		fattyfier = new Fattyfier('text');
+require(['Fattyfier', 'Pinkyfier'], function (Fattyfier, Pinkyfier) {
+	var pinkyfier = new Pinkyfier('text'),
+			fattyfier = new Fattyfier('text');
 
-pinkyfier.pink();
+	pinkyfier.pink();
 
-document.getElementById('fat').onclick = function() {
-	fattyfier.fat();
-};
+	document.getElementById('fat').onclick = function () {
+		fattyfier.fat();
+	};
+});
