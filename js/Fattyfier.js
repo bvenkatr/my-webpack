@@ -1,9 +1,11 @@
-function Fattyfier(id) {
-	this.element = document.getElementById(id);
+class Fattyfier {
+	constructor(id){
+		this.element = document.getElementById(id);
+	}
+
+	fat(){
+		this.element.style.fontWeight = "bold";
+	}
 }
 
-Fattyfier.prototype.fat = function () {
-	this.element.style.fontWeight = "bold";
-};
-
-module.exports = Fattyfier;
+export default Fattyfier;

@@ -1,7 +1,8 @@
-var Fattyfier = require('./Fattyfier'),
-		Pinkyfier = require('./Pinkyfier'),
-		pinkyfier = new Pinkyfier('text'),
-		fattyfier = new Fattyfier('text');
+import Pinkyfier from './Pinkyfier.js';
+import Fattyfier from './Fattyfier.js';
+
+let pinkyfier = new Pinkyfier('text'),
+		pattyfier = new Fattyfier('text');
 
 pinkyfier.pink();
 
