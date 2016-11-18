@@ -1,0 +1,30 @@
+{
+  "name": "get_type",
+  "version": "1.0.0",
+  "description": "get the type of any value in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvenkatr/get-type.git"
+  },
+  "keywords": [
+    "typeof"
+  ],
+  "author": "bvenkatr2@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bvenkatr/get-type/issues"
+  },
+  "homepage": "https://github.com/bvenkatr/get-type#readme",
+  "devDependencies": {
+    "babel": "*",
+    "babel-core": "*",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "*",
+    "webpack": "^1.13.3"
+  }
+}
