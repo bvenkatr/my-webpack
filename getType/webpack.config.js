@@ -1,9 +1,9 @@
-//var LiveReloadPlugin = require("webpack-livereload-plugin");
+var LiveReloadPlugin = require("webpack-livereload-plugin");
 
 module.exports = [{
     cache: true,
     entry: {
-        "bundle": "./index.js",
+        "bundle": "./index.js"
     },
     output: {
         path: "dist",

@@ -1,9 +1,18 @@
+var path = require('path');
+
 module.exports = {
     entry: {
-        "bundle": "./index.js"
+        "bundle": ["./index.js"]
     },
     output: {
-        filename: "build/bundle.js"
+        path: path.join(__dirname, "build"),
+        filename: "[name].js",
+        publicPath: "build"
+    },
+    devServer: {
+        inline: true,
+        port: 8080,
+        headers: { "Access-Control-Allow-Origin": "*" }
     },
     module: {
         loaders: [{
