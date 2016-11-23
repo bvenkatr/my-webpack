@@ -1,6 +1,12 @@
 var path = require('path');
 
 module.exports = {
+    // entry: "./index.js" =>> This will generate main.js as the final bundle
+    //                OR
+    // entry: {
+    //     xyz :'./index.js'// This will generate xyz.js as the final bundle
+    // },
+    //                OR
     entry: {
         "bundle": ["./index.js"]
     },
