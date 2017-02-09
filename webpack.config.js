@@ -1,5 +1,4 @@
 var path = require('path');
-var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 config = {
     entry: {
@@ -7,16 +6,14 @@ config = {
     },
     output: {
         filename: "[name].js",
-        path: path.resolve(__dirname, "build")
+        path: path.resolve(__dirname, "build"),
+        publicPath: "build",
     },
     module: {
         rules: [
             {test: /\.(js|jsx)$/, use: 'babel-loader'}
         ]
-    },
-    plugins: [
-        new LiveReloadPlugin({})
-    ]
+    }
 };
 
 module.exports = config;

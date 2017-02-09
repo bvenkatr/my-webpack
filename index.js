@@ -5,7 +5,7 @@ let pinkyfier = new Pinkyfier('text'),
 	fattyfier = new Fattyfier('text');
 
 pinkyfier.pink();
-console.log("venakt");
+console.log("venkat");
 
 document.getElementById('fat').onclick = function () {
 	fattyfier.fat();
